@@ -24,7 +24,7 @@
             <header>
                 <span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
                 <h1>RNIM</h1>
-                <p>Freundlicher Rapper aus der Nachbarschaft</p>
+                <p>"ECKE" - Out Soon</p>
             </header>
             <!--
 						<hr />
@@ -67,6 +67,41 @@
                 <!--  <ul class="actions special">
                     <li><a href="https://www.kickstarter.com/projects/rnim/rnim-ecke" class="button">Pre-order vinyl now</a></li>
                 </ul> -->
+                  <ul class="actions special">
+                    <li><a id="demo" href="https://www.youtube.com/watch?v=BAywyUMzYgE" class="button"></a>
+                    </li>
+                    <script>
+                    // Set the date we're counting down to
+                    var countDownDate = new Date("Jul 16, 2020 01:00:00").getTime();
+
+                    // Update the count down every 1 second
+                    var x = setInterval(function() {
+
+                    // Get today's date and time
+                    var now = new Date().getTime();
+
+                    // Find the distance between now and the count down date
+                    var distance = countDownDate - now;
+
+                    // Time calculations for days, hours, minutes and seconds
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    // Display the result in the element with id="demo"
+                    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                    + minutes + "m " + seconds + "s ";
+
+                    // If the count down is finished, write some text
+                    if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("demo").innerHTML = "EXPIRED";
+                    }
+                    }, 1000);
+                    </script>
+                </ul> 
+               
                 <ul class="icons">
                     <li><a href="https://www.instagram.com/rnimimimi_/" class="icon brands fa-instagram">Instagram</a></li>
                     <li><a href="https://www.youtube.com/channel/UCmyKG27UM-kmb8v4IzGoZIQ" class="icon brands fa-youtube">YouTube</a></li>
